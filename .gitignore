@@ -1,5 +1,7 @@
 .*swp
+*pyc
 *buckets*
 *circuit_graph*
 *gate_factory*
 run_circuit_amplitude.py
+docs
