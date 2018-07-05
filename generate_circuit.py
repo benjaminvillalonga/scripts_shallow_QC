@@ -230,6 +230,7 @@ def cz_layer(L1, L2, pattern_num):
 
 
 def main(FLAGS):
+
   np.random.seed(FLAGS.seed)
 
   L1, L2, depth = FLAGS.L1, FLAGS.L2, FLAGS.depth
