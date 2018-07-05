@@ -10,6 +10,11 @@ Parameters:
 Raises:
   ValueError: if the depth is smaller than 2.
 
+Example:
+  ``python generate_circuit.py --L1 7 --L2 7 --depth 100 --seed 0 --outfile example_circuits/inst_7_7_100_0``
+
+  This command will generate a file *inst_7_7_100_0* in folder *example_circuits/* of a circuits with dimensions 7x7 and depth 100, randomly generated from seed 0.
+
 Creates a file *outfile* (no extension added) with the circuit in the format:
   * First line has the number of qubits.
   * Subsequent lines have either 3 or 4 fields: cycle, gate (*h*, *x_1_2*, *y_1_2*, *t*, or *cz*).
