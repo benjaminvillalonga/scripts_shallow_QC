@@ -243,7 +243,7 @@ def main(FLAGS):
 
   # Set cz layers.
   for cycle in range(1, depth):
-    layer = cz_layer(L1, L2, cycle%8+1)
+    layer = cz_layer(L1, L2, (cycle-1)%8+1)
     for coords in layer:
       my_circuit.set_gate('cz', coords, cycle)
 
